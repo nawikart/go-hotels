@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>IOTRAVELS: Read Reviews, Compare Prices &amp; Book</title>
+    <meta http-equiv="pragma" content="no-cache"/>
+    <meta http-equiv="cache-control" content="no-cache,must-revalidate"/>
+    <meta http-equiv="expires" content="0"/>
+    <meta name="keywords" content="hotels, accommodation, cheap hotels, cheap accommodation, hotel deals, hotel booking, hotel search, travel search, travel search engine, travel deals, cheap travel, iotravels"/>
+    
+    <meta name="description" content="Book your hotels online on ioTravels.com âœˆ Compare over 700 booking sites âœ“ Find the lowest price âœ“ Fast & easy booking âœ“ Find out more now."/>
+
+    <script src="/assets/cdn/react.development.js"></script>
+    <script src="/assets/cdn/react-dom.development.js"></script>
+    <script src="/assets/cdn/babel.min.js"></script>
+
+	<script type='text/javascript' src='/assets/js/jquery.js'></script>
+    <link rel='stylesheet' href='/assets/css/style.css?a036' type='text/css' />
+
+</head>
+<body>
+<div id="overlay"></div>
+<div id="header" class="borderbottom">
+	<div id="logo"><a href="/">GO Experiment</a></div>
+	<div id="main-menu">
+		<ul>
+			<li><a href="/">home</a></li>
+			<li><a href="/cities-sitemap.html">cities</a></li>
+			<li><a href="/hotels-sitemap.html">sitemap</a></li>
+			<!-- <li><a href="#">hotels</a></li>
+			<li><a href="#">things to do</a></li>
+			<li><a href="#">restaurants</a></li> -->
+		</ul>
+	</div>
+</div>
+
+<div id="main">
+	
+		<h1 align="center">Find your ideal hotel at the <nowrap>lowest prices.</nowrap></h1>
+		<div class="content_tabs autocompleteForm">			
+				<form id="autocompleteForm" autocomplete="off" method="get">
+				      <input id="autocomplete" name="autocomplete" placeholder="Enter a destination or property" onFocus="geolocate()" type="text" />
+					  <input type="hidden" name="lat" value="">
+					  <input type="hidden" name="lng" value="">
+					  <div id="autocompleteResult"></div>				      
+			    </form>		
+		</div>
+	
+	
+			<div class="content_tabs destination">
+				<div class="tab_title_wrapper"><ul class="tab_title">
+					<li class="active middle">Top Cities Worldwide</li>
+					<li class="middle">Top International Countries</li>
+				</ul></div>
+
+				<ul class="tab_content">
+					<li class="active">
+		<div class="section listing4"><h2>{{ .Title }}</nowrap></h2>
+			<div class="items">
+				{{ range $row := .Cities }}
+
+					<div id="city_{{$row.City_id}}"></div>
+
+						<style type="text/css">
+							.img_{{$row.Citykey}}{
+								background-image: url(/assets/images/destination/{{$row.Citykey}}.jpg);
+								background-color: #f00;
+								width: 200px;
+								height: 120px;
+							}
+						</style>
+
+					    <script type="text/babel"> 					    	 
+						      ReactDOM.render(
+									<a href="/{{$row.Citykey}}-{{$row.Countryisocode_lower}}-hotels.html">
+										<div class="item xx img_{{$row.Citykey}}">
+											<div class="item_inner">
+												<div class="text center">
+													<h3>{{$row.City}} ({{$row.Count}})</h3>	
+												</div>
+											</div>
+										</div>
+									</a>									
+								,
+						        document.getElementById('city_{{$row.City_id}}')
+						      );
+					    </script>
+
+				{{ end }}
+			</div></li>
+					<li>
+		<div class="section listing4"><h2>Top International Destinations</nowrap></h2>
+			<div class="items">
+				{{ range $row := .Countries }}
+
+						<div id="country_{{$row.Country_id}}"></div>
+
+						<style type="text/css">
+							.img_{{$row.Countrykey}}{
+								background-image: url(/assets/images/destination/{{$row.Countrykey}}.jpg);
+								background-color: #f00;
+								width: 200px;
+								height: 120px;
+							}
+						</style>
+
+					    <script type="text/babel"> 					    	 
+						      ReactDOM.render(
+									<a href="/{{$row.Countrykey}}.htm">
+										<div class="item img_{{$row.Countrykey}}">
+											<div class="item_inner">
+												<div class="text center">
+													<h3>{{$row.Country}} ({{$row.Count}})</h3>	
+												</div>
+											</div>
+										</div>
+									</a>									
+								,
+						        document.getElementById('country_{{	$row.Country_id}}')
+						      );
+					    </script>				
+
+				{{ end }}
+			</div></li>
+				</ul>
+			</div>
+
+		</div>
+
+<div id="footer" class="middle">
+	<p>Copyright &copy 2017 IOTRAVELS. &nbsp; &nbsp; 
+
+	<nowrap><a href="/">Home</a> &nbsp; | &nbsp; <a href="/cities-sitemap.html">Cities</a> &nbsp; | &nbsp; <a href="/hotels-sitemap.html">Sitemap</a></nowrap></p>
+
+		<div id="mylinks" style="height: 1px;overflow: hidden; padding-top: 5px;">
+			<p><a href="http://iotravels.com">iotravels</a></p>
+			<p><a href="http://iobali.com">iobali</a></p>
+			<p><a href="http://balious.com">balious</a></p>
+			<p><a href="http://seoulatoz.com">seoulatoz</a></p>
+
+			<p><a href="http://hotel-discount-coupon.com">hotel-discount-coupon</a></p>
+			<p><a href="http://hoteldealsoftheday.com">hoteldealsoftheday</a></p>
+			<p><a href="http://thelowestpricehotels.com">thelowestpricehotels</a></p>
+			<p><a href="http://thebesthoteldiscount.com">thebesthoteldiscount</a></p>
+		</div>
+</div>
+
+<script type="text/javascript">
+    var timer;
+    var delay = 100; // 0.1 seconds delay after last input
+	$('#autocomplete').on('keyup keypress', function(){
+		window.clearTimeout(timer);
+		if($('#autocomplete').val().length > 0){
+			var keyword = $('#autocomplete').val();
+			$('#result').html('');
+			timer = window.setTimeout(function(){
+				// alert($('#autocomplete').val())
+				$.get("http://localhost:8080/autocomplete/"+ keyword, function( data ) {			  
+				  	var items = '';
+					$.each(data, function(i, item) {
+
+						if(data[i].Type == 'c'){
+							var info = '<i>'+ data[i].Count +'</i> properties';
+						}else{
+							var info = '<i class="rank"><b>'+ data[i].Rating_average +'</b></i>';
+						}
+						items += '<a class="'+ data[i].Type +'" href="/autocomplete-redirect?type='+ data[i].Type +'&id='+ data[i].Id +'">'+ data[i].Value + '<span>'+ info +'</span></a>'				    				
+					});
+					if(items != ''){
+						$('#autocompleteResult').html(items);
+						$('#autocompleteResult').show();
+						$('#overlay').show();
+						$('#overlay').click(function(){
+							$(this).hide();
+							$('#autocompleteResult').hide();
+							$('#autocomplete').val('');
+						});
+					}else{
+						$('#autocompleteResult').hide();
+					}				
+				});
+			}, delay);
+		}else if($('#autocomplete').val().length < 1){
+			$('#autocompleteResult').hide()	
+		}
+	});
+</script>
+<script type="text/javascript">
+	$('#map_overlay .close').click(function(){
+		$('#map_overlay').css('top', '-1000px');
+	});
+	$('.view_on_map').click(function(){
+		$('#map_overlay').css('top', '0');
+	});
+
+	/////BEGIN TAB CONTENTS
+	$('.content_tabs .tab_title li').click(function(){
+		$(this).closest('.content_tabs').find('li').removeClass('active');
+		var index = $(this).index();
+		$(this).closest('.content_tabs').find('li:nth-child('+ (index+1) +')').addClass('active');
+	});
+	/////END TAB CONTENTS
+
+	////////////////BEGIN MENYAMAKAN TINGGI ITEM
+	if($('body').width() > 413){
+		var h = 0;	
+		$('.listing1 .item').each(function(){
+			if(h < $(this).height()){
+				h = $(this).height();
+			}			
+		});
+
+		$('.listing1 .item').css('height', h);
+	}
+	////////////////END MENYAMAKAN TINGGI ITEM 
+</script>
+</body>
+</html>

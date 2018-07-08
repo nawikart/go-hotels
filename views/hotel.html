@@ -1,0 +1,820 @@
+	<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Real Reviews on COMO Uma Ubud + Best Things to Do and Restaurants Nearby!</title>
+    <meta http-equiv="pragma" content="no-cache"/>
+    <meta http-equiv="cache-control" content="no-cache,must-revalidate"/>
+    <meta http-equiv="expires" content="0"/>
+    <meta name="keywords" content="COMO Uma Ubud , Bali Indonesia ,  discount hotel , online reservation , real time booking , COMO Uma Ubud , Bali , Hotel Real Reviews in Bali , acommodation , accomodation , acomodation , accommodation"/>
+    
+    <meta name="description" content="Read real reviews, guaranteed best price. Special rates on COMO Uma Ubud, Bali - Indonesia. Travel smarter with IOTRAVELS."/>
+
+    <script src="/assets/cdn/react.development.js"></script>
+    <script src="/assets/cdn/react-dom.development.js"></script>
+    <script src="/assets/cdn/babel.min.js"></script>
+
+	<script type='text/javascript' src='/assets/js/jquery.js'></script>
+	<!-- <script src="https://code.jquery.com/jquery-1.10.2.js"></script> -->
+
+    <link rel='stylesheet' href='/assets/css/style.css?a036' type='text/css' />
+
+<!-- <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-98829185-1', 'auto');
+  ga('send', 'pageview');
+
+</script>	 -->
+</head>
+<body>
+
+
+<div id="header" class="borderbottom">
+	<div id="logo"><a href="/">IOTRAVELS</a></div>
+	<div id="main-menu">
+		<ul>
+			<li><a href="/">home</a></li>
+			<li><a href="/cities-sitemap.html">cities</a></li>
+			<li><a href="/hotels-sitemap.html">sitemap</a></li>
+			<!-- <li><a href="#">hotels</a></li>
+			<li><a href="#">things to do</a></li>
+			<li><a href="#">restaurants</a></li> -->
+		</ul>
+	</div>
+</div>
+
+<div id="main">
+		<!-- <h1 align="center">Find your ideal hotel at the <nowrap>lowest prices.</nowrap></h1> -->
+		<div class="content_tabs autocompleteForm">			
+				<form id="autocompleteForm" autocomplete="off" method="get">
+				      <input id="autocomplete" name="autocomplete" placeholder="Enter a destination or property" onFocus="geolocate()" type="text" />
+					  <input type="hidden" name="lat" value="">
+					  <input type="hidden" name="lng" value="">
+					  <div id="autocompleteResult"></div>				      
+			    </form>		
+		</div><br>
+
+			<div id="posisi"><a href="/">Home</a> &raquo; <a href="/indonesia.htm">Indonesia</a> &raquo; <a href="/tourism-bali-id-vacations.html">Bali</a> &raquo; <a href="/bali-id-hotels.html">Hotel</a> &raquo; <a>{{.Hotel_name}}</a></div>
+
+			<div id="main_w_sidebar">
+				<div id="content">
+					
+					<div id="thing-header">
+						<div class="row fullwidth">
+							<h1>{{.Hotel_name}}</h1>
+							<span class="star s5"></span>
+							<span class="thingAddress">{{.Location}}, {{.City}}, {{.Country}}, 00000 <nowrap>(<a href="#" class="view_on_map">view on map</a>)</nowrap></span>
+						</div>
+						<div class="rate">
+							<div><b>9.0</b> <span>Excellent</span></div>
+							<div class="baseon">base on <a href="#reviews">92 reviews</a></div>
+						</div><div class="badge-price"><div class="discount-ribbon middle"><span class="discount-ribbon-discount"></span><span class="discount-ribbon-text">Discount</span></div><div class="price-ribbon middle"><span class="price-ribbon-from">Starting at</span>
+							<div style="display: table; margin: 2px auto;"><span class="price-ribbon-currency"></span>&nbsp;<span class="price-ribbon-price"></span></div></div></div>
+
+							<script type="text/javascript">
+								var discount_json = [{from:'341',fromText:"from",currency:"USD",currencyOnBack:false}];
+
+								if(typeof discount_json[0].amount != "undefined"){
+									$(".discount-ribbon-discount").html(discount_json[0].amount + "%");
+								}else{
+									$(".badge-price").hide();
+								}
+								
+								$(".price-ribbon-currency").html(discount_json[0].currency);
+								$(".price-ribbon-price").html(discount_json[0].from);
+							</script>
+							</div>
+
+					<style type="text/css">
+						.thing-slider .item{
+							display: flex;
+						}
+						.thing-slider .item .cover{
+							width: 100%;
+							height: 100%;
+						}
+					</style>
+		            	<style type="text/css">
+		            		.img_1{
+		            			background-image: url({{.Photo1}}?s=800x);
+		            		}
+		            		.img_2{
+		            			background-image: url({{.Photo2}}?s=800x);
+		            		}
+		            		.img_3{
+		            			background-image: url({{.Photo3}}?s=800x);
+		            		}
+		            		.img_4{
+		            			background-image: url({{.Photo4}}?s=800x);
+		            		}		            			            			            		
+		            	</style>
+
+					<script src="/assets/js/jquery.slick.js"></script>
+					<link rel="stylesheet" href="/assets/css/slick.css?a03" type="text/css" />
+		            <div class="thing-slider">
+		            	<div class="item" id="item_1">
+		            	</div>		            	
+		            	<div class="item" id="item_2">
+		            	</div>		            	
+		            	<div class="item" id="item_3">
+		            	</div>	            	
+		            	<div class="item" id="item_4">
+		            	</div>
+		           	</div>
+
+					    <script type="text/babel">					    	 
+						      ReactDOM.render(
+								<div class="img_1 cover" title=""></div>,
+						        document.getElementById('item_1')
+						      );
+						      ReactDOM.render(
+								<div class="img_2 cover" title="Lobby"></div>,
+						        document.getElementById('item_2')
+						      );
+						      ReactDOM.render(
+								<div class="img_2 cover" title="Interior view"></div>,
+						        document.getElementById('item_3')
+						      );
+						      ReactDOM.render(
+								<div class="img_4 cover" title="Swimming pool"></div>,
+						        document.getElementById('item_4')
+						      );						      						      						      
+					    </script>		           	
+					    
+
+                                  <script type="text/javascript">
+                                    (function($){
+
+                                         $(".thing-slider").slick({
+											  dots: false,
+											  infinite: true,
+											  speed: 300,
+											  fade: true,
+											  autoplaySpeed: 2000,
+											  autoplay: true,
+											  cssEase: "linear"
+                                          });
+
+                                          $(".thing-slider").width($(window).width());
+                                          
+                                          var bp_bottom = -1 * ($(".thing-slider").height() - 5) + "px";
+                                          // alert(bp_bottom);
+                                          $("#thing-header .badge-price").css("bottom",  bp_bottom);
+
+                                          // $(".slider-nav").slick({
+                                          //   slidesToShow: 3,
+                                          //   slidesToScroll: 1,
+                                          //   asNavFor: ".main_slider",
+                                          //   dots: false,
+                                          //   centerMode: true,
+                                          //   focusOnSelect: true
+                                          // });
+
+                                    })(jQuery);
+                                  </script>  
+		            
+			            <div class="tabs_content">
+				            <ul>
+				            	<li>
+									<a class="tab_title" style="display: table; width: calc(100% - 40px); margin-top: 20px;">
+										<span class="left">Available room</span>
+										<span class="right">Price</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+	        			<div id="pricing">
+		            			<div class="row">
+		            				<div>
+		            					<div class="img" style="background-image: url(//pix6.agoda.net/hotelImages/486/48685/48685_13111415530017479953.jpg?s=160x90&amp;ar=16x9);">
+		            						<span>Terrace Room</span></div>
+		            					<div class="included">
+		            						<ul><li>Breakfast, Welcome drink, Daily yoga class</li><li>Low rate (non-refundable)</li><li>USD                           11</li>
+		            						</ul>
+		            					</div>
+		            				</div>
+		            				<div>
+		            					<div class="price"><span>USD</span><b>{{.Rates_from}}</b></div>
+		            					<div class="button medium dark" style="float: right;"><a href="https://www.agoda.com/como-uma-ubud/hotel/bali-id.html?checkin=2017-11-14&los=1&adults=1&rooms=1&cid=1730363">view more rates</a></div>
+		            				</div>
+		            			</div>
+	        			</div>
+		            <div class="tabs_content">
+			            <ul>
+			            	<li>
+			            		<a class="tab_title">Overview</a>
+			            		<div class="tab_content" id="tab_content_overview">{{.Overview}}</div>
+			            	</li>		            	
+			            	<li>
+			            		<a class="tab_title">Room Type</a>
+			            		<div class="tab_content" id="tab_content_roomtype">
+			            					<div id="rooms">
+													<table borderspacing="5" borderpadding="5">
+													        <!--<thead>
+													            <th colspan="2" align="center">Room Type</th>
+													        </thead>--><tr><td><img src="//pix6.agoda.net/hotelImages/486/48685/48685_15082712580035176522.jpg" width="60" /></td><td>garden pool villa </td></tr><tr><td><img src="//pix6.agoda.net/hotelImages/486/48685/48685_15012114270024734126.jpg" width="60" /></td><td>Terrace Room </td></tr><tr><td><img src="//pix6.agoda.net/hotelImages/486/48685/48685_15012114080024733264.jpg" width="60" /></td><td>Pool Villas </td></tr></table>
+														<table borderspacing="5" borderpadding="5">
+													        <!--<thead>
+													            <th colspan="2" align="center">Room Type</th>
+													        </thead>--><tr><td><img src="//pix6.agoda.net/hotelImages/486/48685/48685_15012114040024732952.jpg?s=90x" width="60" /></td><td>Suite Pool </td></tr><tr><td><img src="//pix6.agoda.net/hotelImages/486/48685/48685_15082712580035176467.jpg?s=90x" width="60" /></td><td>Superior Double Room </td></tr></table>                                            
+		                                    </div>
+			            		</div>
+			            	</li>
+				            	<li>
+				            		<a class="tab_title">Nearest essentials</a>
+				            		<div class="tab_content" id="tab_content_nearest">
+			                            <div id="nearest"><div><b>Airports</b><ul><li>Ngurah Rai International Airport (DPS) <nowrap>( 30.14 km )</nowrap></li><li>Lombok International Airport (LOP) <nowrap>( 114.59 km )</nowrap></li></ul></div><div><b>Bus and rail stations</b><ul><li>Bangli Bus Terminal <nowrap>( 11.85 km )</nowrap></li><li>Ubung Bus Terminal <nowrap>( 16.74 km )</nowrap></li></ul></div><div><b>Hospitals and clinics</b><ul><li>Praktek Dokter Dipayana <nowrap>( 5.29 km )</nowrap></li></ul></div><div><b>Drug stores</b><ul><li>Puri Mandela Pharmacy <nowrap>( 8.24 km )</nowrap></li></ul></div><div><b>Convenience stores</b><ul><li>Indomaret <nowrap>( 7.11 km )</nowrap></li></ul></div><div><b>Cash withdrawal</b><ul><li>ATM <nowrap>( 1.06 km )</nowrap></li></ul></div>
+			                            </div>
+				            		</div>
+				            	</li>
+					            	<li>
+					            		<a class="tab_title">Hotel Reviews</a>
+					            		<div class="tab_content" id="tab_content_reviews">
+					                        <div id="reviews">
+					                                <ul>
+					                                        <li>
+					                                            <div class="score">8.4</div>
+					                                            <div class="reviewerName">Stephen from United Kingdom</div>
+					                                            <div class="travellerType">Couple</div>
+					                                            <div class="roomType">Terrace Room</div>
+					                                        </li>
+					                                        <li>
+					                                            <div class="reviewerStayDetail">Stayed 3 nights in December 2016</div>
+					                                            <div class="commentsTitle">&ldquo;Lovely&rdquo;</div>
+																<div class="reviewsComments"></div>
+																<div class="reviewsComments"></div>
+					                                            <div class="reviewsComments">Enjoyed our stay. We had a pool villa which was lovely. A few problems with things not working were resolved quickly and efficiently. Staff were very helpful.Lovely pool and as experienced previously at Como elsewhere the breakfasts were superb. Yoga studio has THE BEST views and we enjoyed the classes very much.</div>
+					                                            <div class="reviewDate">Reviewed December 20, 2016</div>
+					                                        </li>
+					                                </ul>
+					                                <ul>
+					                                        <li>
+					                                            <div class="score">8.4</div>
+					                                            <div class="reviewerName">athena from</div>
+					                                            <div class="travellerType">Solo traveler</div>
+					                                            <div class="roomType">Superior Double Room</div>
+					                                        </li>
+					                                        <li>
+					                                            <div class="reviewerStayDetail">Stayed 2 nights in December 2016</div>
+					                                            <div class="commentsTitle">&ldquo;Stop your search now! &rdquo;</div>
+																<div class="reviewsComments"></div>
+																<div class="reviewsComments"></div>
+					                                            <div class="reviewsComments">I stayed at the COMO Uma Ubud for 2 nights and honest to god almost cried when I left. After traveling for about a month, this was definitely my "splurge" for the trip and I hesitated given the cost but I have never in all my years of travel felt this pampered by the staff of a property. I just felt so unbelievably taken care of and it felt heartfelt from every single person.   Highlights:  Property: The property is GORGEOUS. Seriously. Every detail has been thought about. The landscaping makes you feel transported.   Rooms: I was upgraded to a terrace view room and despite some heavy downpours while I visited Ubud (it was rainy season), it somehow never felt like a damper because the jungly views were so precious and serene.  Spa: was just amazing. It was raining the first day I arrived so it worked out perfectly. I could hear the rain outside and it was the most relaxing environment. The massage therapist was also just wonderful. Perfect pressure and very skilled.  Staff: This really put it over the top for me. Throughout the 2.5 days I was there, every single need / request was anticipated by the staff. From before I even arrived, to the moment I was checking in...it was first class five star service. I inquired about a massage & the purification ceremony that the hotel offers and bc I was traveling without phone service, I wasn&#39;t able to respond right away. They went ahead and reserved my requests and pre-planned my itinerary knowing I was only staying a short amount of time. I also have no idea how they did it but when I arrived at breakfast each day, they somehow knew I was coming and what I had just come from (be that a walk, or the pool, or an activity). They remember how you take your coffee & knew I was reaching for the morning paper before I could even get up to get it. They really go above & beyond to help you make the very most of your trip, which was such an incredible treat. I saw this same treatment to all those staying there and you could tell every</div>
+					                                            <div class="reviewDate">Reviewed December 19, 2016</div>
+					                                        </li>
+					                                </ul>
+					                                <ul>
+					                                        <li>
+					                                            <div class="score">9.6</div>
+					                                            <div class="reviewerName">mellissa from Singapore</div>
+					                                            <div class="travellerType">Couple</div>
+					                                            <div class="roomType">Suite Pool</div>
+					                                        </li>
+					                                        <li>
+					                                            <div class="reviewerStayDetail">Stayed 5 nights in November 2016</div>
+					                                            <div class="commentsTitle">&ldquo;Terrific experience&rdquo;</div>
+																<div class="reviewsComments"></div>
+																<div class="reviewsComments"></div>
+					                                            <div class="reviewsComments">Beautiful lush green grounds, impeccable service, food served in the hotel is really delicious. The pool suite we booked was spacious, had clean decor and all the necessities you might need. The wifi is good throughout the entire hotel which was so nice. The Como Shambala spa is top notch too.</div>
+					                                            <div class="reviewDate">Reviewed December 04, 2016</div>
+					                                        </li>
+					                                </ul>
+					                                <ul>
+					                                        <li>
+					                                            <div class="score">9.2</div>
+					                                            <div class="reviewerName">Michael from Australia</div>
+					                                            <div class="travellerType">Couple</div>
+					                                            <div class="roomType">Superior Double Room</div>
+					                                        </li>
+					                                        <li>
+					                                            <div class="reviewerStayDetail">Stayed 1 night in November 2016</div>
+					                                            <div class="commentsTitle">&ldquo;A Terrific Anniversary Experience&rdquo;</div>
+																<div class="reviewsComments"></div>
+																<div class="reviewsComments"></div>
+					                                            <div class="reviewsComments">We stayed for just one night in Ubud to celebrate our wedding anniversary. The staff were really accomodating and attentive fro arrival to departure including lots of great advice on the delights of Ubud.</div>
+					                                            <div class="reviewDate">Reviewed November 28, 2016</div>
+					                                        </li>
+					                                </ul>
+					                                <ul>
+					                                        <li>
+					                                            <div class="score">10.0</div>
+					                                            <div class="reviewerName">Gillian from Australia</div>
+					                                            <div class="travellerType">Solo traveler</div>
+					                                            <div class="roomType">Terrace Room</div>
+					                                        </li>
+					                                        <li>
+					                                            <div class="reviewerStayDetail">Stayed 1 night in October 2016</div>
+					                                            <div class="commentsTitle">&ldquo;I love UMA Ubud!&rdquo;</div>
+																<div class="reviewsComments"></div>
+																<div class="reviewsComments"></div>
+					                                            <div class="reviewsComments">i truly loved staying at Como Uma in Ubud and would definitely stay there again on my  next visit. It&#39;s an oasis with authenticity & charm inside & out.</div>
+					                                            <div class="reviewDate">Reviewed November 03, 2016</div>
+					                                        </li>
+					                                </ul>
+					                                <ul>
+					                                        <li>
+					                                            <div class="score">9.6</div>
+					                                            <div class="reviewerName">Melinda from Singapore</div>
+					                                            <div class="travellerType">Couple</div>
+					                                            <div class="roomType">garden pool villa</div>
+					                                        </li>
+					                                        <li>
+					                                            <div class="reviewerStayDetail">Stayed 2 nights in October 2016</div>
+					                                            <div class="commentsTitle">&ldquo;Wonderful place with excellent service &rdquo;</div>
+																<div class="reviewsComments"></div>
+																<div class="reviewsComments"></div>
+					                                            <div class="reviewsComments">The service was impeccable and we thoroughly enjoyed our stay. Breakfast menu was unlike others and very interesting while the food was excellent.  Spa was a luxury experience too. Our only complaint was that our stay was too short!</div>
+					                                            <div class="reviewDate">Reviewed October 26, 2016</div>
+					                                        </li>
+					                                </ul>
+					                                <ul>
+					                                        <li>
+					                                            <div class="score">8.4</div>
+					                                            <div class="reviewerName">Mitul from United Kingdom</div>
+					                                            <div class="travellerType">Couple</div>
+					                                            <div class="roomType">garden pool villa</div>
+					                                        </li>
+					                                        <li>
+					                                            <div class="reviewerStayDetail">Stayed 3 nights in October 2016</div>
+					                                            <div class="commentsTitle">&ldquo;Luxury villa in Ubud&rdquo;</div>
+																<div class="reviewsComments"></div>
+																<div class="reviewsComments"></div>
+					                                            <div class="reviewsComments">The property is beautiful and the rooms are decorated to the highest standard. The highlight has to be the four poster bed and the bath. However, the property is located about a 40 minute walk into the centre of Ubud. The hotel provides a free return shuttle at 0900/1100/1300/1500/1700 which isn&#39;t convenient if you would like to go into the centre of town for dinner. The road is not well lit with busy traffic which makes making the trek into town arduous. I would like be to return to this property but only if they provided a more regular and longer shuttle service.</div>
+					                                            <div class="reviewDate">Reviewed October 10, 2016</div>
+					                                        </li>
+					                                </ul>
+					                                <ul>
+					                                        <li>
+					                                            <div class="score">9.6</div>
+					                                            <div class="reviewerName">Andrew from Australia</div>
+					                                            <div class="travellerType">Couple</div>
+					                                            <div class="roomType">Terrace Room</div>
+					                                        </li>
+					                                        <li>
+					                                            <div class="reviewerStayDetail">Stayed 3 nights in September 2016</div>
+					                                            <div class="commentsTitle">&ldquo;What really impressed me was how wee-trained and genuinely warm & caring the staff were&rdquo;</div>
+																<div class="reviewsComments"></div>
+																<div class="reviewsComments"></div>
+					                                            <div class="reviewsComments">Beautiful, relaxing,</div>
+					                                            <div class="reviewDate">Reviewed September 29, 2016</div>
+					                                        </li>
+					                                </ul>
+					                                <ul>
+					                                        <li>
+					                                            <div class="score">10.0</div>
+					                                            <div class="reviewerName">Ruth from United Kingdom</div>
+					                                            <div class="travellerType">Group</div>
+					                                            <div class="roomType">garden pool villa</div>
+					                                        </li>
+					                                        <li>
+					                                            <div class="reviewerStayDetail">Stayed 2 nights in September 2016</div>
+					                                            <div class="commentsTitle">&ldquo;Exceptional service in a beautiful location&rdquo;</div>
+																<div class="reviewsComments"></div>
+																<div class="reviewsComments"></div>
+					                                            <div class="reviewsComments">We had a lovely stay, the como uma is set in beautiful tropical gardens with an unbelievably relaxing atmosphere. All the staff went out of their way to make us feel welcome and nothing was too much trouble. The food was amazing and the view from the yoga studio is breathtaking. If we are ever back in Bali will definitely stay here again.</div>
+					                                            <div class="reviewDate">Reviewed September 28, 2016</div>
+					                                        </li>
+					                                </ul>
+					                                <ul>
+					                                        <li>
+					                                            <div class="score">4.8</div>
+					                                            <div class="reviewerName">Elaine from Singapore</div>
+					                                            <div class="travellerType">Group</div>
+					                                            <div class="roomType">Superior Double Room</div>
+					                                        </li>
+					                                        <li>
+					                                            <div class="reviewerStayDetail">Stayed 4 nights in June 2016</div>
+					                                            <div class="commentsTitle">&ldquo;Disappointing &rdquo;</div>
+																<div class="reviewsComments"></div>
+																<div class="reviewsComments"></div>
+					                                            <div class="reviewsComments">All my requests that i have sent through agoda was not noted by the resort. The front office lady informed us politely that "oh you book through agoda and hence our simple requests like having 2 double beds, enquiring abt airport transfers are all not attended to"    The check in took us 30 mins..    The yoga instructor is very time sensitive.. He placed a clock near him and the class end promptly 59 mins later..     I would say is overpriced for such service..</div>
+					                                            <div class="reviewDate">Reviewed September 25, 2016</div>
+					                                        </li>
+					                                </ul>                                                                
+					                        </div>                       
+					            		</div>
+					            	</li><!-- <li>
+			            		<a class="tab_title">Map Nearby</a>
+			            		<div class="tab_content" id="tab_content_map">
+		                            
+			            		</div>
+			            	</li>-->            	            		            		            	
+			            </ul>
+		            </div>
+				</div>
+				<div id="sidebar">
+					
+		            <div class="tabs_content">
+			            <ul>
+			            	<li class="view_on_map">
+			            		<span>VIEW ON MAP</span>
+			            	</li>
+                            <li class="agoda-searchbox">
+
+                                <h5 class="widget-title borderbottom">Hotel Deals of the Day</h5>
+
+                                    <!-- <script type="text/javascript">
+                                        agoda_ad_client = "1730363_40633";
+                                        agoda_ad_width = 300;
+                                        agoda_ad_height = 250;
+                                    </script>
+                                    <script type="text/javascript" src="//banner.agoda.com/js/show_ads.js"></script> -->
+
+                            </li>			            
+			            	<li>
+			            		<a class="tab_title">Similar Hotels</a>
+			            		<div class="tab_content" id="tab_content_11">
+
+									<div class="listing11">
+										<!--<div class="items">
+											<div class="item">
+												<div class="item_inner">
+													<div class="img"></div>
+													<div class="text">
+
+														<h3>this is title in h3 tag</h3>				
+													
+														<div class="row"><span class="star left"></span><span class="reviewsCount left">189 reviews</span></div>
+
+														<div class="row tags">
+															<div class="left"><span class="icon">X</span><a href="#">beach</a><a href="#">garden</a><a href="#">diving</a></div>
+														</div>
+													</div>					
+												</div>
+											</div>
+											<div class="item">
+												<div class="item_inner">
+													<div class="img"></div>
+													<div class="text">
+
+														<h3>this is title in h3 tag</h3>				
+													
+														<div class="row"><span class="star left"></span><span class="reviewsCount left">189 reviews</span></div>
+
+														<div class="row tags">
+															<div class="left"><span class="icon">X</span><a href="#">beach</a><a href="#">garden</a><a href="#">diving</a></div>
+														</div>
+													</div>					
+												</div>
+											</div>
+											<div class="item">
+												<div class="item_inner">
+													<div class="img"></div>
+													<div class="text">
+
+														<h3>this is title in h3 tag</h3>				
+													
+														<div class="row"><span class="star left"></span><span class="reviewsCount left">189 reviews</span></div>
+
+														<div class="row tags">
+															<div class="left"><span class="icon">X</span><a href="#">beach</a><a href="#">garden</a><a href="#">diving</a></div>
+														</div>
+													</div>					
+												</div>
+											</div>
+											<div class="item">
+												<div class="item_inner">
+													<div class="img"></div>
+													<div class="text">
+
+														<h3>this is title in h3 tag</h3>				
+													
+														<div class="row"><span class="star left"></span><span class="reviewsCount left">189 reviews</span></div>
+
+														<div class="row tags">
+															<div class="left"><span class="icon">X</span><a href="#">beach</a><a href="#">garden</a><a href="#">diving</a></div>
+														</div>
+													</div>					
+												</div>
+											</div>
+											<div class="item">
+												<div class="item_inner">
+													<div class="img"></div>
+													<div class="text">
+
+														<h3>this is title in h3 tag</h3>				
+													
+														<div class="row"><span class="star left"></span><span class="reviewsCount left">189 reviews</span></div>
+
+														<div class="row tags">
+															<div class="left"><span class="icon">X</span><a href="#">beach</a><a href="#">garden</a><a href="#">diving</a></div>
+														</div>
+													</div>					
+												</div>
+											</div>
+											<div class="item">
+												<div class="item_inner">
+													<div class="img"></div>
+													<div class="text">
+
+														<h3>this is title in h3 tag</h3>				
+													
+														<div class="row"><span class="star left"></span><span class="reviewsCount left">189 reviews</span></div>
+
+														<div class="row tags">
+															<div class="left"><span class="icon">X</span><a href="#">beach</a><a href="#">garden</a><a href="#">diving</a></div>
+														</div>
+													</div>					
+												</div>
+											</div>
+										</div>
+										<a href="#" class="linkViewAll">View All Hotels</a>-->
+									</div>
+
+			            		</div>
+			            	</li>			
+			            	<li>
+			            		<a class="tab_title">Restaurants Nearby</a>
+			            		<div class="tab_content" id="tab_content_12">
+
+									<div class="listing11">
+										<!--<div class="items">
+											<div class="item">
+												<div class="item_inner">
+													<div class="img"></div>
+													<div class="text">
+
+														<h3>this is title in h3 tag</h3>				
+													
+														<div class="row"><span class="star left"></span><span class="reviewsCount left">189 reviews</span></div>
+
+														<div class="row tags">
+															<div class="left"><span class="icon">X</span><a href="#">beach</a><a href="#">garden</a><a href="#">diving</a></div>
+														</div>
+													</div>					
+												</div>
+											</div>
+											<div class="item">
+												<div class="item_inner">
+													<div class="img"></div>
+													<div class="text">
+
+														<h3>this is title in h3 tag</h3>				
+													
+														<div class="row"><span class="star left"></span><span class="reviewsCount left">189 reviews</span></div>
+
+														<div class="row tags">
+															<div class="left"><span class="icon">X</span><a href="#">beach</a><a href="#">garden</a><a href="#">diving</a></div>
+														</div>
+													</div>					
+												</div>
+											</div>
+											<div class="item">
+												<div class="item_inner">
+													<div class="img"></div>
+													<div class="text">
+
+														<h3>this is title in h3 tag</h3>				
+													
+														<div class="row"><span class="star left"></span><span class="reviewsCount left">189 reviews</span></div>
+
+														<div class="row tags">
+															<div class="left"><span class="icon">X</span><a href="#">beach</a><a href="#">garden</a><a href="#">diving</a></div>
+														</div>
+													</div>					
+												</div>
+											</div>
+											<div class="item">
+												<div class="item_inner">
+													<div class="img"></div>
+													<div class="text">
+
+														<h3>this is title in h3 tag</h3>				
+													
+														<div class="row"><span class="star left"></span><span class="reviewsCount left">189 reviews</span></div>
+
+														<div class="row tags">
+															<div class="left"><span class="icon">X</span><a href="#">beach</a><a href="#">garden</a><a href="#">diving</a></div>
+														</div>
+													</div>					
+												</div>
+											</div>
+											<div class="item">
+												<div class="item_inner">
+													<div class="img"></div>
+													<div class="text">
+
+														<h3>this is title in h3 tag</h3>				
+													
+														<div class="row"><span class="star left"></span><span class="reviewsCount left">189 reviews</span></div>
+
+														<div class="row tags">
+															<div class="left"><span class="icon">X</span><a href="#">beach</a><a href="#">garden</a><a href="#">diving</a></div>
+														</div>
+													</div>					
+												</div>
+											</div>
+											<div class="item">
+												<div class="item_inner">
+													<div class="img"></div>
+													<div class="text">
+
+														<h3>this is title in h3 tag</h3>				
+													
+														<div class="row"><span class="star left"></span><span class="reviewsCount left">189 reviews</span></div>
+
+														<div class="row tags">
+															<div class="left"><span class="icon">X</span><a href="#">beach</a><a href="#">garden</a><a href="#">diving</a></div>
+														</div>
+													</div>					
+												</div>
+											</div>
+										</div>
+										<a href="#" class="linkViewAll">View All Hotels</a>-->
+									</div>
+
+			            		</div>
+			            	</li>			
+			            	<li>
+			            		<a class="tab_title">Attractions Nearby</a>
+			            		<div class="tab_content" id="tab_content_13">
+
+									<div class="listing11">
+										<!--<div class="items">
+											<div class="item">
+												<div class="item_inner">
+													<div class="img"></div>
+													<div class="text">
+
+														<h3>this is title in h3 tag</h3>				
+													
+														<div class="row"><span class="star left"></span><span class="reviewsCount left">189 reviews</span></div>
+
+														<div class="row tags">
+															<div class="left"><span class="icon">X</span><a href="#">beach</a><a href="#">garden</a><a href="#">diving</a></div>
+														</div>
+													</div>					
+												</div>
+											</div>
+											<div class="item">
+												<div class="item_inner">
+													<div class="img"></div>
+													<div class="text">
+
+														<h3>this is title in h3 tag</h3>				
+													
+														<div class="row"><span class="star left"></span><span class="reviewsCount left">189 reviews</span></div>
+
+														<div class="row tags">
+															<div class="left"><span class="icon">X</span><a href="#">beach</a><a href="#">garden</a><a href="#">diving</a></div>
+														</div>
+													</div>					
+												</div>
+											</div>
+											<div class="item">
+												<div class="item_inner">
+													<div class="img"></div>
+													<div class="text">
+
+														<h3>this is title in h3 tag</h3>				
+													
+														<div class="row"><span class="star left"></span><span class="reviewsCount left">189 reviews</span></div>
+
+														<div class="row tags">
+															<div class="left"><span class="icon">X</span><a href="#">beach</a><a href="#">garden</a><a href="#">diving</a></div>
+														</div>
+													</div>					
+												</div>
+											</div>
+											<div class="item">
+												<div class="item_inner">
+													<div class="img"></div>
+													<div class="text">
+
+														<h3>this is title in h3 tag</h3>				
+													
+														<div class="row"><span class="star left"></span><span class="reviewsCount left">189 reviews</span></div>
+
+														<div class="row tags">
+															<div class="left"><span class="icon">X</span><a href="#">beach</a><a href="#">garden</a><a href="#">diving</a></div>
+														</div>
+													</div>					
+												</div>
+											</div>
+											<div class="item">
+												<div class="item_inner">
+													<div class="img"></div>
+													<div class="text">
+
+														<h3>this is title in h3 tag</h3>				
+													
+														<div class="row"><span class="star left"></span><span class="reviewsCount left">189 reviews</span></div>
+
+														<div class="row tags">
+															<div class="left"><span class="icon">X</span><a href="#">beach</a><a href="#">garden</a><a href="#">diving</a></div>
+														</div>
+													</div>					
+												</div>
+											</div>
+											<div class="item">
+												<div class="item_inner">
+													<div class="img"></div>
+													<div class="text">
+
+														<h3>this is title in h3 tag</h3>				
+													
+														<div class="row"><span class="star left"></span><span class="reviewsCount left">189 reviews</span></div>
+
+														<div class="row tags">
+															<div class="left"><span class="icon">X</span><a href="#">beach</a><a href="#">garden</a><a href="#">diving</a></div>
+														</div>
+													</div>					
+												</div>
+											</div>
+										</div>
+										<a href="#" class="linkViewAll">View All Hotels</a>-->
+									</div>
+
+			            		</div>
+			            	</li>
+			            	<li class="agoda_ad_banner">
+
+									<!-- <script type="text/javascript">
+									    agoda_ad_client = "1730363_40674";
+									    agoda_ad_width = 300;
+									    agoda_ad_height = 600;
+									</script>
+									<script type="text/javascript" src="//banner.agoda.com/js/show_ads.js"></script> -->
+
+			            	</li>
+			            </ul>			            				
+				</div>
+			</div></div>
+
+<div id="footer" class="middle">
+	<p>Copyright &copy 2017 IOTRAVELS. &nbsp; &nbsp; 
+
+	<nowrap><a href="/">Home</a> &nbsp; | &nbsp; <a href="/cities-sitemap.html">Cities</a> &nbsp; | &nbsp; <a href="/hotels-sitemap.html">Sitemap</a></nowrap></p>
+
+		<div id="mylinks" style="height: 1px;overflow: hidden; padding-top: 5px;">
+			<p><a href="http://iotravels.com">iotravels</a></p>
+			<p><a href="http://iobali.com">iobali</a></p>
+			<p><a href="http://balious.com">balious</a></p>
+			<p><a href="http://seoulatoz.com">seoulatoz</a></p>
+
+			<p><a href="http://hotel-discount-coupon.com">hotel-discount-coupon</a></p>
+			<p><a href="http://hoteldealsoftheday.com">hoteldealsoftheday</a></p>
+			<p><a href="http://thelowestpricehotels.com">thelowestpricehotels</a></p>
+			<p><a href="http://thebesthoteldiscount.com">thebesthoteldiscount</a></p>
+		</div>
+</div>
+
+<div id="map_overlay">	
+	<div class="close"></div>
+	<div id="map"></div>
+</div>
+
+<div class="simple_popup">
+	<div class="simple_popup_inner">
+			<div class="close">(x)</div>
+			<p>Please enter a valid address then select on one of the addresses that appear afterwards.</p>
+			<img src="images/autocomplete-sample.png" width="272" />
+	</div>
+</div>
+
+<script type="text/javascript">
+    var timer;
+    var delay = 100; // 0.1 seconds delay after last input
+	$('#autocomplete').on('keyup keypress', function(){
+		window.clearTimeout(timer);
+		if($('#autocomplete').val().length > 0){
+			var keyword = $('#autocomplete').val();
+			$('#result').html('');
+			timer = window.setTimeout(function(){
+				// alert($('#autocomplete').val())
+				$.get( "http://localhost:8080/search-mysql/"+ keyword, function( data ) {			  
+				  	var items = '';
+					$.each(data, function(i, item) {
+
+						if(data[i].Type == 'c'){
+							var info = '<i>'+ data[i].Count +'</i> properties';
+						}else{
+							var info = '<i class="rank"><b>'+ data[i].Rating_average +'</b></i>';
+						}
+						items += '<a class="'+ data[i].Type +'" href="/autocomplete-redirect?type='+ data[i].Type +'&id='+ data[i].Id +'">'+ data[i].Value + '<span>'+ info +'</span></a>'				    				
+					});
+					if(items != ''){
+						$('#autocompleteResult').html(items);
+						$('#autocompleteResult').show();
+						$('#overlay').show();
+						$('#overlay').click(function(){
+							$(this).hide();
+							$('#autocompleteResult').hide();
+							$('#autocomplete').val('');
+						});
+					}else{
+						$('#autocompleteResult').hide();
+					}				
+				});
+			}, delay);
+		}else if($('#autocomplete').val().length < 1){
+			$('#autocompleteResult').hide()	
+		}
+	});
+</script>
+</body>
+</html>
